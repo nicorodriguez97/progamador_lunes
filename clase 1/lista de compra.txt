@@ -1,3 +1,6 @@
 fideos
 arroz
 pollo
+
+palta
+queso
