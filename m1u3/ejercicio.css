@@ -1,0 +1,36 @@
+h1 {
+    color: blue;/*color de la letra*/
+    background-color: black;/*color de fondo*/
+    text-transform: uppercase;/*transforma el texto a mayusculas*/
+    text-align: center;/*alinea el texto al centro*/
+    
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;/*tipo de letra*/
+    color: red;/*color de la letra*/   
+    font-size: 35px;/*tamaño de la letra*/
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.6);
+    border: 40px Groove #ff6550;
+}
+
+p {
+    color: green;/*color de la letra*/
+ 
+}
+.destacados {
+    color: orange ;/*color de la letra*/
+    font-weight: bold;/*tamaño de la letra*/
+    font-style: italic;/*estilo de la letra*/
+}
+
+#caja{
+    background-color: yellow;/*color de fondo*/
+    width: 300px;/*ancho de la caja*/
+    /*height: 500px;/*alto de la caja*/
+    padding: 20px;/*espacio interno de la caja*/
+    border: 5px solid black;/*borde de la caja*/
+    box- box-sizing: border-box;/*tamaño de la caja*/
+    margin-left: 100px;/*margen izquierdo de la caja*/
+    box-shadow: 33px 35px 21px -5px rgba(0,0,0,0.75);
+}
