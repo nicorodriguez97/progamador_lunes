@@ -1,0 +1,49 @@
+body {
+    background-color: gray;
+    /*color de fondo*/
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+}
+
+h1 {
+   text-align: center;  
+    /*alinea el texto al centro*/
+    border: 10px solid black;
+}
+
+#caja {
+    background-color: blue;
+    /*color de fondo*/
+    margin-left: 700px;
+    margin-right: 700px;
+}
+
+h3 {
+    color: black;
+    /*color de la letra*/
+    font-size: 20px;
+    /*tamaño de la letra*/
+    border-left: 10px solid blue;
+}
+
+img {
+    border: 10px solid black;
+    /*borde de la imagen*/
+    margin-left: 700px;
+    /*margen izquierdo de la imagen*/
+    margin-right: 700px;
+}
+
+p {
+    color: black;
+    /*color de la letra*/
+    font-size: 20px;
+    /*tamaño de la letra*/
+}
+
+li {
+    color: black;
+    /*color de la letra*/
+    font-size: 20px;
+    /*tamaño de la letra*/
+}
