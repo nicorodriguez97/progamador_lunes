@@ -303,12 +303,60 @@
                 </div>
 
             </div>
-          
+
         </div>
     </div>
 
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow p-4">
+                    <h3 class="text-center mb-4">Contacto</h3>
 
+                    <form>
+                        <!-- Fila 1: Nombre y Correo -->
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Nombre completo">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="correo" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="correo" placeholder="Correo@ejemplo.com">
+                            </div>
+                        </div>
 
+                        <!-- Fila 2: Teléfono y Asunto -->
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="Telefono"
+                                    placeholder="Tu número de teléfono">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="asunto" class="form-label">Asunto</label>
+                                <input type="text" class="form-control" id="asunto"
+                                    placeholder="¿Sobre qué querés consultar?">
+                            </div>
+                        </div>
+
+                        <!-- Fila 3: Mensaje (Textarea) -->
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4"
+                                placeholder="Escribinos tu consulta..."></textarea>
+                        </div>
+
+                        <!-- Botón de enviar -->
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary px-5">Enviar mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
 
     <!-- SCRIPT DE BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
