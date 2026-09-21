@@ -1,0 +1,58 @@
+
+/* Color personalizado para la barra de navegación */
+.azul-claro-bootstrap {
+    background-color: #0d6efd !important;
+}
+
+/* Altura del carrusel de fondo */
+.carousel-item {
+    height: 60vh; /* Ajusta la altura según tus necesidades */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Capa oscura semitransparente para que el texto resalte */
+.carousel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.548);
+    z-index: 1;
+    /* Por debajo de todo para no bloquear */
+}
+
+/* Rutas corregidas de las imágenes (sin repetir 'css/') */
+.slide-1 {
+    background-image: url('hero/1.jpg');
+}
+
+.slide-2 {
+    background-image: url('hero/2.jpg');
+}
+
+.slide-3 {
+    background-image: url('hero/3.jpg');
+}
+
+.slide-4 {
+    background-image: url('hero/4.jpg');
+}
+
+
+.nav-item li a:hover {
+    color: white ;
+    background-color: #fdc50d ;
+}
+
+
+
+
+/* Sección del Footer */
+footer {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
