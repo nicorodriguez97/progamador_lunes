@@ -56,3 +56,13 @@ footer {
     color: rgb(255, 255, 255);
     text-align: center;
 }
+
+#conocenos {
+    background-color: #007dfa;
+
+}
+
+.mapa iframe {
+    width: 50%;
+    aspect-ratio: 1.2;
+}
