@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travesia Argentina</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="css/favicon/favicon.ico" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- favicon -->
+
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
@@ -15,7 +23,8 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg border-bottom border-body azul-claro-bootstrap" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Logo</a>
+            <a class="navbar-brand" href="#">
+                <img src="css/Logo.png" alt="Logo" class="logo" height="60"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -30,7 +39,7 @@
                         <a class="nav-link" href="paquetes.html">Paquetes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tours</a>
+                        <a class="nav-link" href="#tours">Tours</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="alojamientos.html">Alojamientos</a>
@@ -107,7 +116,7 @@
     </div>
 
     <!-- SECCIÓN DE TARJETAS (PAQUETES Y TOURS) -->
-    <div class="container my-4">
+    <div id="paquetes" class="container my-4">
         <div class="row g-4">
             <div class="col-12">
                 <h2 class="text-center mb-4">Paquetes</h2>
@@ -147,7 +156,7 @@
             </div>
 
             <!-- Título Tours -->
-            <div class="col-12 mt-5">
+            <div id="tours" class="col-12 mt-5">
                 <h2 class="text-center mb-4">Tours</h2>
             </div>
             <!-- Tarjeta 4 -->
@@ -187,12 +196,12 @@
     </div>
 
     <!-- SECCIÓN CONÓCENOS (Contacto y Mapa lado a lado) -->
-    <div id="conocenos" class="container-fluid py-4 seccion-conocenos">
-        <div class="row align-items-center">
+    <div id="conocenos" class="container-fluid py-3 seccion-conocenos">
+        <div class="row justify-content-center align-items-center g-4">
 
             <!-- Columna Izquierda: Formulario de Contacto -->
-            <div id="contacto" class="col-lg-6 mb-4 mb-lg-0">
-                <div class="card shadow p-4">
+            <div id="contacto" class="col-lg-4 mb-4 mb-lg-0">
+                <div class="card shadow p-5">
                     <h3 class="text-center mb-4">Contacto</h3>
                     <form>
                         <div class="row mb-3">
@@ -230,11 +239,9 @@
             </div>
 
             <!-- Columna Derecha: El Mapa -->
-            <div class="col-lg-6 mapa">
+            <div class="col-lg-4 mapa">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.420520059319!2d-60.676872487984056!3d-32.939905271439336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7aca42c9f4e4b%3A0x23fef24dc5b9a017!2sTerminal%20De%20Omnibus%20Rosario!5e0!3m2!1ses-419!2sar!4v1790548806061!5m2!1ses-419!2sar"
-                  class="w-100" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.420520059319!2d-60.676872487984056!3d-32.939905271439336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7aca42c9f4e4b%3A0x23fef24dc5b9a017!2sTerminal%20De%20Omnibus%20Rosario!5e0!3m2!1ses-419!2sar!4v1790548806061!5m2!1ses-419!2sar"></iframe>
             </div>
 
         </div>

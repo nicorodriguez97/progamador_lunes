@@ -63,6 +63,6 @@ footer {
 }
 
 .mapa iframe {
-    width: 50%;
+    width: 100%;
     aspect-ratio: 1.2;
 }
