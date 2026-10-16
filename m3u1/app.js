@@ -6,8 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-/*galeria*/
-var galeriaRouter = require('./routes/galeria'); //galeria.js
+
 
 var app = express();
 
@@ -24,24 +23,26 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 /*paso 2*/
-app.use('/galeria', galeriaRouter);
+var paquetesRouter = require('./routes/paquetes');
+var toursRouter = require('./routes/tours');
+var alojamientosRouter = require('./routes/alojamientos');
 /*rutas de la nav bar*/
 
 /*rutas de paquetes */
 app.get('/paquetes', function(req, res) {
-  res.send('pagina de paquetes');
+  res.render('paquetes'); // paquetes.hbs
 });
 /*rutas de tours */
 app.get('/tours', function(req, res) {
-  res.send('pagina de tours');
+  res.render('tours'); // tours.hbs
 });
 /*rutas de alojamientos */
 app.get('/alojamientos', function(req, res) {
-  res.send('pagina de alojamientos');
+  res.render('alojamientos'); // alojamientos.hbs
 });
 /*rutas de contacto */
 app.get('/contacto', function(req, res) {
-  res.render('contacto') /*contacto.hbs*/
+  res.send('pagina de contacto'); //  contacto
 });
 
 
