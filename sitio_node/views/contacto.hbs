@@ -1,0 +1,56 @@
+<!-- CONTACTO -->
+<div id="contacto" class="container-fluid py-5 bg-light border-top">
+    <div class="row justify-content-center align-items-center g-4">
+
+        <!-- Formulario de Contacto -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="card shadow-sm border-0 p-4">
+                <h3 class="text-center mb-3 text-dark fw-bold">Contacto</h3>
+                <form action="/contacto" method="post">
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre completo">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="correo" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="correo@ejemplo.com">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Tu número de teléfono">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="asunto" class="form-label">Asunto</label>
+                            <input type="text" class="form-control" id="asunto" name="asunto" placeholder="¿Sobre qué querés consultar?">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="3" placeholder="Escribinos tu consulta..."></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary px-5 py-2">Enviar mensaje</button>
+                    </div>
+                </form>
+                {{mensajeEnviado}}
+            </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="col-lg-5 mapa">
+            <div class="card shadow-sm border-0 overflow-hidden">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.420520059319!2d-60.676872487984056!3d-32.939905271439336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7aca42c9f4e4b%3A0x23fef24dc5b9a017!2sTerminal%20De%20Omnibus%20Rosario!5e0!3m2!1ses-419!2sar!4v1790548806061!5m2!1ses-419!2sar" 
+                    width="100%" height="370" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+    </div>
+</div>

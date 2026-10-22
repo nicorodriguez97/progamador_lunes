@@ -1,0 +1,51 @@
+/* Color personalizado para la barra de navegación */
+.azul-claro-bootstrap {
+    background-color: #0d6efd !important;
+}
+
+/* Altura del carrusel de fondo para que luzca bien amplio */
+.carousel-item {
+    height: 70vh;
+    min-height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Rutas de las imágenes del carrusel */
+.slide-1 {
+    background-image: url('/images/hero/1.jpg');
+}
+
+.slide-2 {
+    background-image: url('/images/hero/2.jpg');
+}
+
+.slide-3 {
+    background-image: url('/images/hero/3.jpg');
+}
+
+.slide-4 {
+    background-image: url('/images/hero/4.jpg');
+}
+
+/* Efecto hover para el menú desplegable y elementos */
+.nav-item li a:hover {
+    color: white;
+    background-color: #fdc50d;
+}
+
+/* Sección del Footer */
+footer {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#conocenos {
+    background-color: #007dfa;
+}
+
+.mapa iframe {
+    width: 100%;
+    aspect-ratio: 1.2;
+}
