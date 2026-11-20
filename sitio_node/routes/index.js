@@ -1,13 +1,30 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
+var pool = require('../models/bd');
 
-/* página de inicio. */
+/* Página de inicio */
 router.get('/', function(req, res, next) {
+  // Descomentar estas 2 líneas (y agregar async antes de function) para probar la BD:
+  // var datos = await pool.query('SELECT * FROM empleados');
+  // console.log(datos);
   res.render('index', { title: 'Travesía Argentina' });
 });
 
-/* Contacto. */
+/* Secciones principales */
+router.get('/paquetes', function(req, res, next) {
+  res.render('paquetes', { title: 'Paquetes - Travesía Argentina' });
+});
+
+router.get('/tours', function(req, res, next) {
+  res.render('tours', { title: 'Tours - Travesía Argentina' });
+});
+
+router.get('/alojamientos', function(req, res, next) {
+  res.render('alojamientos', { title: 'Alojamientos - Travesía Argentina' });
+});
+
+/* Contacto */
 router.get('/contacto', function(req, res, next) {
   res.render('contacto', { title: 'Contacto - Travesía Argentina' });
 });
@@ -17,7 +34,6 @@ router.get('/blogs', function(req, res, next) {
   res.render('blogs', { title: 'Blog - Travesía Argentina' });
 });
 
-/* Blogs generales */
 router.get('/blog/bariloche', function(req, res, next) {
   res.render('blog-bariloche', { title: 'Bariloche - Blog Travesía Argentina' });
 });
@@ -33,7 +49,6 @@ router.get('/blog/iguazu', function(req, res, next) {
 router.get('/blog/mendoza', function(req, res, next) {
   res.render('blog-mendoza', { title: 'Mendoza - Blog Travesía Argentina' });
 });
-
 
 /* Formulario de contacto de Nodemailer y Mailtrap */
 router.post('/contacto', async (req, res, next) => {
